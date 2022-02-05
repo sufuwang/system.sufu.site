@@ -2,7 +2,7 @@ import { defineNuxtConfig } from 'nuxt3'
 
 const Base_Url = {
   development: 'http://localhost:4000',
-  production: 'http://system.sufu.site',
+  production: 'http://metaverse.sufu.site',
 }
 
 
