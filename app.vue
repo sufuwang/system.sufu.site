@@ -1,11 +1,10 @@
 <template>
   <NuxtPage></NuxtPage>
 </template>
-<script>
-// 1. workflow 笔记
-// 2. 服务器 mysql 安装, 链接测试
-// 3. Nest: 登陆, 新增, 修改 接口, 跨域中间件
-// 4. Nuxt: ui库 登陆页面
+<script lang="ts" setup>
+onErrorCaptured((error) => {
+  console.info(error)
+})
 </script>
 <style>
 body {

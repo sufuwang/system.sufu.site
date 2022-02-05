@@ -1,11 +1,12 @@
 {
   "private": true,
   "scripts": {
-    "dev": "nuxi dev",
+    "dev": "nuxi dev --port 3001",
     "build": "nuxi build",
-    "start": "node .output/server/index.mjs"
+    "start": "cross-env HOST=0.0.0.0 cross-env PORT=3001 node .output/server/index.mjs"
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "nuxt3": "3.0.0-27385241.dccc0c9"
   },
   "dependencies": {
